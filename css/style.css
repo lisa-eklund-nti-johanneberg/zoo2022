@@ -1,0 +1,40 @@
+#wrapper{
+    display: grid; 
+    grid-template-areas:"hd hd hd"
+                        "nv1 nv1 nv1"
+                        "s1 s1 a1"
+                        "s1 s1 a2"
+                        "ft ft ft";
+                        
+grid-template-columns: 25% 25% 25%;
+                        
+}
+
+header {
+    grid-area: hd;
+}
+
+#nv1 {
+    grid-area: nv1;
+    background-color: beige;
+}
+
+#s1 {
+    grid-area: s1;
+    background-color: blanchedalmond;
+}
+
+#a1 {
+    grid-area: a1;
+    background-color: darksalmon;
+}
+
+#a2 {
+    grid-area: a2;
+    background-color: darksalmon;
+}
+
+footer {
+    grid-area: ft;
+    background-color: lightgoldenrodyellow;
+}
