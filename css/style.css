@@ -43,29 +43,30 @@
     font: caption;
     color: white;
     grid-area: menu;
-    background: #dfb2f4 ;
-    padding: 1.25%;
+    background: rgb(200, 174, 138);
+    padding: 0.75%;
 }
 
 #section_3{
 
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:monospace;
     font-size:x-small;
     grid-area: s3;
     background-color: rgb(65, 60, 55);
-    color:white;
-    padding: 1%;
+    color: white;
+    padding: 0.6%;
 }
 
 #section_1{
 
     text-align: center;
     font: caption;
-    color: white;
+    font-family: monospace;
+    color: rgb(65, 60, 55);
     grid-area: s1;
-    background: #68b6ef;
-    padding: 22%;
+    background: rgb(225, 204, 177);
+    padding: 4%;
 }
 
 
@@ -74,9 +75,11 @@
 
     text-align: center;
     font: caption;
-    color: white;
     grid-area: s2;
-    background: #ff7477 ;
+    background-image: url(../misc/zookartat.jpg);
+    border: 4px;
+    border-color:rgb(200, 174, 138);
+    border-style: solid;
     padding: 22%;
 }
 
@@ -95,22 +98,35 @@
 .footer{
     text-align: center;
     font: caption;
+    font-size: 13px;
     color: white;
     grid-area: ft;
-    background: lightsalmon;
+    background: rgb(200, 174, 138);
+    padding: 18px;
+    height: 170px;
+    padding-bottom: 38px;
 }
 
 .navbar{
     list-style-type: none;
+    font-size: large;
 }
+
+a {
+    color: rgb(75, 118, 55);
+  }
 
 li {
     list-style-type: none;
     display: inline-block;
+    font-family: monospace;
 }
 
 .cards {
     display: grid;
+    color: rgb(65, 60, 55);
+    padding: 2.5%;
+    padding-left: 120px;
     grid-template-rows: auto;
     grid-template-columns: 23% 23% 23% 23%;
     grid-template-areas: 
@@ -120,17 +136,22 @@ li {
 }
 
 #wrapper {
-    background-color: aqua;
+    background-color: rgb(225, 204, 177);
 }
 
 header {
     text-align: center;
+    font-size: 19px;
+    color: rgb(65, 60, 55);
 }
 .card {
-    background-color: purple;
+    background-color: rgb(112, 159, 90);
     text-align: center;
     margin: 10%;
     border-radius: 10%;
+    border: 4px;
+    border-style: solid;
+    border-color: rgb(200, 174, 138);
 }
 
 #card1 {
@@ -167,21 +188,40 @@ header {
 
 #about {
     text-align: center;
+   height: 500px;
+   padding-top: 15px;
+   font-size: larger;
+   color: rgb(71, 65, 59);
 }
 
 #owner {
     margin: auto;
-    width: 80%;
+    width: 87%;
     display: grid;
-    grid-template-columns: 30% 30% 30%;
+    grid-template-columns: 40% 30% 30%;
     grid-template-areas: 
     "text text img";
 }
 
 #ownertext {
     grid-area: text;
+    text-align: left;
+    font-family: monospace;
+   margin: auto;
+   margin-right: 100px;
+   margin-top: 45px;
 }
 
 #ownerimg {
     grid-area: img;
+    border:5px;
+    border-radius: 2%;
+    border-color: rgb(64, 58, 58);
+    border-style: solid;
+    margin-top: 50px;
 }
+
+#apbeskrivning {
+    font-family: monospace;
+}
+
